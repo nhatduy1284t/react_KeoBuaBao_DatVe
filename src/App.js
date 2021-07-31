@@ -1,16 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
-
-
 import BaiTapOanTuTi from "./BaiTapRedux/BaiTapOanTuTi/BaiTapOanTuTi";
-import BaiTapXucXac from "./BaiTapRedux/BaiTapXucXac/BaiTapXucXac";
+import BaiTapBookingTicket from "./BaiTapRedux/BaiTapBookingTicket/BaiTapBookingTicket";
 
 function App() {
   return (
     <div>
       <div className="App">
-        {/* <BaiTapXucXac/> */}
-        <BaiTapOanTuTi />
+        {/* <BaiTapOanTuTi /> */}
+        <BaiTapBookingTicket/>
       </div>
     </div>
   );

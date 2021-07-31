@@ -2,14 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 export class Player extends Component {
   render() {
-    console.log("this.props", this.props);
     return (
       <div className="text-center playerGame">
         <div className="theThink">
           <img
             className="mt-3"
             style={{ width: 100, height: 100, transform: "rotate(-120deg)" }}
-            src={this.props.mangDatCuoc.find((item) => item.datCuoc == true).hinhAnh}
+            src={this.props.mangDatCuoc.find((item) => item.datCuoc === true).hinhAnh}
           />
         </div>
         <div className="speech-bubble"></div>
@@ -32,7 +31,6 @@ export class Player extends Component {
                       type:'CHON_KEO_BUA_BAO',
                       maCuoc:item.ma
                     };
-                    console.log("dispatch",item.ma)
                     this.props.dispatch(action)
                   }}
                 >
